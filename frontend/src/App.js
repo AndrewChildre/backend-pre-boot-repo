@@ -1,17 +1,26 @@
 import React from 'react';
-// import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
 import Fitness from './components/Fitness';
 import Forms from './components/Forms'
 import Nav from './components/Nav'
 import Header from './components/Header'
+import Values from './components/Values'
+import Home from './components/Home'
 function App() {
   return (
     <div className="App">
     {/* <Fitness /> */}
-    
-     
-      <Header />
-    
+
+      
+      <main>
+        <Header />
+        <Router>
+        <Route path='/' exact component={Home} />
+        <Route path='/values' exact component={Values} />
+        </Router>
+      </main>
+
     </div>
   );
 }

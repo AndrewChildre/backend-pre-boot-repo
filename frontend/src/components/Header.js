@@ -8,9 +8,13 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Nav from './Nav';
 
+
 const useStyles = makeStyles((theme) => ({
+
+
 	root: {
 		flexGrow: 1,
+		
 	},
 	menuButton: {
 		marginRight: theme.spacing(2),
@@ -35,7 +39,7 @@ export default function ButtonAppBar() {
 						<Nav />
 					</IconButton>
 					<Typography variant='h6' className={classes.title}>
-						News
+						United States Marine Corps
 					</Typography>
 					{/* <Button color='inherit'>Login</Button> */}
 				</Toolbar>

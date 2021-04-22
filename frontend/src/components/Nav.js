@@ -11,7 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
+import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles({
     drw:{
         // background: ('red'),
@@ -41,7 +41,7 @@ const Nav = () => {
 
     return (
         <div >
-            <Button className={classes.drw} onClick={ToggleDrawer(true)}>xx</Button>
+            <Button className={classes.drw} onClick={ToggleDrawer(true)}><MenuIcon /></Button>
         
 
      <Drawer 
