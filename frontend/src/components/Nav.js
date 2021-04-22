@@ -12,6 +12,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
+import Link from '@material-ui/core/Link';
+
 const useStyles = makeStyles({
     drw:{
         // background: ('red'),
@@ -40,28 +42,40 @@ const Nav = () => {
         )
 
     return (
-        <div >
-            <Button className={classes.drw} onClick={ToggleDrawer(true)}><MenuIcon /></Button>
-        
+			<div>
+				<Button className={classes.drw} onClick={ToggleDrawer(true)}>
+					<MenuIcon />
+				</Button>
 
-     <Drawer 
-     anchor={'left'} open={state} onClose={ToggleDrawer(false)} >
-         {list()}
+				<Drawer anchor={'left'} open={state} onClose={ToggleDrawer(false)}>
+					{list()}
 
-    <List >
-    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+					<List>
+						<ListItem>
+							<Button color='primary' href='/'>
+								Home
+							</Button>
+						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/values'>
+								Values
+							</Button>
+						</ListItem>
+						<ListItem>
+							<Button color='primary' href='/fitness'>
+								Fitness
+							</Button>
+						</ListItem>
+						{/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem  button key={text}>
             <ListItemIcon >{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
-        ))}
-      </List>
-      </Drawer>
-            </div>
-    
-
-    
-    ) 
+        ))} */}
+					</List>
+				</Drawer>
+			</div>
+		); 
 }
         
  

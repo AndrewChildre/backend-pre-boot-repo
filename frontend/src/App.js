@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Header from './components/Header'
 import Values from './components/Values'
 import Home from './components/Home'
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Router>
         <Route path='/' exact component={Home} />
         <Route path='/values' exact component={Values} />
+        <Route path='/fitness' exact component={Fitness} />
         </Router>
       </main>
 
