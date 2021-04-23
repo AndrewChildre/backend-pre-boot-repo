@@ -1,0 +1,3 @@
+CREATE DATABASE fitness;
+CREATE USER fitnessuser WITH PASSWORD 'fitness';
+GRANT ALL PRIVILEGES ON DATABASE fitness TO fitnessuser;
