@@ -7,7 +7,6 @@ This is the backend database for the USMC pre-bootcamp study guide
 Python | Django
 ## Other Technologies
 Django_Rest framework
-<p>&nbsp;</p>
 Node
 
 ## Check it out
